@@ -86,7 +86,7 @@ ssize_t input_buffer(data_info *data, char **buffer, size_t *length)
 				a--;
 			}
 			data->linecount_flag = 1;
-			remove_Bufcomments(*buffer);
+			remove_buffer_comments(*buffer);
 			history_build_ls(data, *buffer, data->histcount++);
 			/* if (_strchr(*buf, ';')) is this a command chain? */
 			{

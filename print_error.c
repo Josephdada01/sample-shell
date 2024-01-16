@@ -64,7 +64,7 @@ int print_Intdescriptor(int number, int file_des)
 }
 
 /**
- * _erratoi - Convert a string to an integer
+ * _err_atoi - Convert a string to an integer
  * @string: The string to be converted
  *
  * This function converts a string to an integer. It handles positive integers
@@ -76,7 +76,7 @@ int print_Intdescriptor(int number, int file_des)
  * Return: The converted integer on success, or -1 on failure
  */
 
-int _erratoi(char *string)
+int _err_atoi(char *string)
 {
 	int a = 0;
 	unsigned long int result = 0;

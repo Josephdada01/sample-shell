@@ -37,7 +37,7 @@ int shell_exit(data_info *data)
 
 	if (data->argv[1])  /* If there is an exit arguement */
 	{
-		check_exit = _erratoi(data->argv[1]);
+		check_exit = _err_atoi(data->argv[1]);
 		if (check_exit == -1)
 		{
 			data->status = 2;
@@ -46,7 +46,7 @@ int shell_exit(data_info *data)
 			errorputchar('\n');
 			return (1);
 		}
-		data->err_num = _erratoi(data->argv[1]);
+		data->err_num = _err_atoi(data->argv[1]);
 		return (-2);
 	}
 	data->err_num = -1;

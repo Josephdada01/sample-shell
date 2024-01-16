@@ -13,7 +13,7 @@ size_t print_list(const list_t *head)
 
 	while (head)
 	{
-		_puts(convert_Numstr(head->num, 10, 0));
+		_puts(convert_Num_str(head->num, 10, 0));
 		_putchar(':');
 		_putchar(' ');
 		_puts(head->str ? head->str : "(nil)");

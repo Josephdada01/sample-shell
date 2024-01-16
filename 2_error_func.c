@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * remove_Bufcomments - Remove comments from the buffer
+ * remove_buffer_comments - Remove comments from the buffer
  * @buf: Pointer to the buffer containing the input string
  *
  * This function removes comments from  input buffer. A comment is identified
@@ -11,7 +11,7 @@
  */
 
 
-void remove_Bufcomments(char *buf)
+void remove_buffer_comments(char *buf)
 {
 	int index = 0;
 
@@ -28,7 +28,7 @@ void remove_Bufcomments(char *buf)
 
 
 /**
- * convert_Numstr - Convert a number to a string representation in a given base
+ * convert_Num_str - Convert a number to a string representation in a given base
  * @number: The number to convert
  * @c_base: The base for conversion (e.g., 2 for binary, 10 for decimal, etc.)
  * @c_flags: Flags to control the conversion behavior
@@ -36,7 +36,7 @@ void remove_Bufcomments(char *buf)
  * Return: A pointer to the string representation of the converted number
  */
 
-char *convert_Numstr(long int number, int c_base, int c_flags)
+char *convert_Num_str(long int number, int c_base, int c_flags)
 {
 	static char *Array;
 	static char buf[50];

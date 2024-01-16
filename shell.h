@@ -23,7 +23,7 @@
 #define CMD_AND		2
 #define CMD_CHAIN	3
 
-/* for convert_Numstr() */
+/* for convert_Num_str() */
 #define CONVERT_LOWERCASE	1
 #define CONVERT_UNSIGNED	2
 
@@ -175,13 +175,13 @@ int _isalpha(int);
 int _atoi(char *);
 
 /* funerrors1.c */
-int _erratoi(char *);
+int _err_atoi(char *);
 void print_Errorstderr(data_info *, char *);
 int print_Intdescriptor(int, int);
 
 /*funerror2.c*/
-char *convert_Numstr(long int, int, int);
-void remove_Bufcomments(char *);
+char *convert_Num_str(long int, int, int);
+void remove_buffer_comments(char *);
 
 /* funbuiltin.c */
 int shell_exit(data_info *);

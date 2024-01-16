@@ -51,13 +51,13 @@ int variableReplace(data_info *data)
 		if (!_strcmp(data->argv[a], "$?"))
 		{
 			strContent_replace(&(data->argv[a]),
-					_strdup(convert_Numstr(data->status, 10, 0)));
+					_strdup(convert_Num_str(data->status, 10, 0)));
 			continue;
 		}
 		if (!_strcmp(data->argv[a], "$$"))
 		{
 			strContent_replace(&(data->argv[a]),
-					_strdup(convert_Numstr(getpid(), 10, 0)));
+					_strdup(convert_Num_str(getpid(), 10, 0)));
 			continue;
 		}
 		current_node = strNode_with(data->env, &data->argv[a][1], '=');
