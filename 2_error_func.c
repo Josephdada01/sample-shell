@@ -28,7 +28,7 @@ void remove_buffer_comments(char *buf)
 
 
 /**
- * convert_Num_str - Convert a number to a string representation in a given base
+ * convert_Num_str - Convert a number to a string representation in given base
  * @number: The number to convert
  * @c_base: The base for conversion (e.g., 2 for binary, 10 for decimal, etc.)
  * @c_flags: Flags to control the conversion behavior
